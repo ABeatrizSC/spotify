@@ -1,0 +1,79 @@
+html {
+    font-family: "DM Sans", sans-serif;
+    color: white;
+}
+
+body {
+    background-color: #000;
+}
+
+/* Temporário */
+span {
+    font-size: 15px;
+}
+
+.sidebar {
+    width: 300px;
+    padding: 1.2rem;
+    display: flex;
+    flex-flow: column;
+    gap: 7px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.sidebar__navigation {
+    background-color: #121212;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+}
+
+.sidebar__navigation .logo {
+    background-color: #121212;
+    border-radius: 8px;
+    display: flex;
+}
+
+.sidebar__navigation .logo img {
+    width: 80px;
+}
+
+.sidebar nav ul {
+    display: flex;
+    flex-flow: column;
+    gap: 15px;
+}
+
+.sidebar nav ul li a {
+    color: #b3b3b3;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    display: flex;
+    gap: 15px;
+}
+
+.library-list__li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.library-list__li > span {
+    color: #b3b3b3;
+}
+
+.li__a {
+   display: flex;
+   align-items: center; 
+   gap: 10px;
+}
+
+svg {
+    width: 25px;
+    fill: #b3b3b3;
+}
