@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Projeto página réplica do Spotify feita durante o evento Imersão Front-End da Alura.">
-    <title>Spotify Imersão</title>
+    <title>Spotify - Imersão Front-End</title>
     <link rel="shortcut icon" href="assets/icons/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
@@ -34,19 +34,42 @@
                 </li>
             </ul>
         </nav>
-        <nav class="sidebar__navigation">
-            <ul class="library-list">
-                <li class="library-list__li">
-                    <a class="li__a" href="">
-                        <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE">
-                            <path d="M3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zM15.5 2.134A1 1 0 0 0 14 3v18a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V6.464a1 1 0 0 0-.5-.866l-6-3.464zM9 2a1 1 0 0 0-1 1v18a1 1 0 1 0 2 0V3a1 1 0 0 0-1-1z"></path>
-                        </svg>
-                        <span>Sua Biblioteca</span>
-                    </a>
-                    <span class="fa-solid fa-plus"></span>
-                </li>
-            </ul>
-        </nav>
+        <div class="container-library">
+            <div class="container-library__content">
+                <button class="library__button">
+                    <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE">
+                        <path d="M3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zM15.5 2.134A1 1 0 0 0 14 3v18a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V6.464a1 1 0 0 0-.5-.866l-6-3.464zM9 2a1 1 0 0 0-1 1v18a1 1 0 1 0 2 0V3a1 1 0 0 0-1-1z"></path>
+                    </svg>
+                    <span>Sua Biblioteca</span>
+                </button>
+                <span class="fa-solid fa-plus"></span>
+            </div>
+
+            <section class="section-playlist">
+                <div class="section-playlist__content">
+                    <span class="text title">
+                        Crie sua primeira playlist
+                    </span>
+                    <span class="text subtitle">
+                        É fácil, vamos te ajudar.
+                    </span>
+                    <button class="section-playlist__button">
+                        <span>Criar playlist</span>
+                    </button>
+                </div>
+            </section>
+
+            <div class="cookies">
+                <a href="">Cookies</a>
+            </div>
+
+            <div class="languages">
+                <button class="languages__button">
+                    <span class="fa fa-globe"></span>
+                    <span>Português do Brasil</span>
+                </button>
+            </div>
+        </div>
     </div>
 </body>
 </html>
