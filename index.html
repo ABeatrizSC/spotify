@@ -5,29 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Projeto página réplica do Spotify feita durante o evento Imersão Front-End da Alura.">
     <title>Spotify - Imersão Front-End</title>
-    <link rel="shortcut icon" href="assets/icons/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/styles/reset.css">
+    <link rel="stylesheet" href="src/styles/vars.css">
+    <link rel="stylesheet" href="src/styles/global.css">
+    <link rel="stylesheet" href="src/styles/sidebar-footer.css">
+    <link rel="stylesheet" href="src/styles/main-content.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="shortcut icon" href="src/assets/icons/favicon.png" type="image/x-icon">
 </head>
 <body>
     <div class="sidebar">
         <nav class="sidebar__navigation">
             <div class="logo">
-                <a href="">
-                    <img src="./assets/icons/logo-spotify.png" alt="Logo do Spotify">
+                <a href="./index.html">
+                    <img src="src/assets/icons/logo-spotify.png" alt="Logo do Spotify">
                 </a>
             </div>
             <ul>
                 <li>
-                    <a href="">
+                    <a href="#">
                         <span class="fa-solid fa-house"></span>
                         <span>Início</span>
                     </a>
                 </li>
 
                 <li>
-                    <a href="">
+                    <a href="#">
                         <span class="fa-solid fa-search"></span>
                         <span>Buscar</span>
                     </a>
@@ -53,7 +56,7 @@
                     <span class="text subtitle">
                         É fácil, vamos te ajudar.
                     </span>
-                    <button class="section-playlist__button">
+                    <button class="section-playlist__button button--white">
                         <span>Criar playlist</span>
                     </button>
                 </div>
@@ -71,5 +74,38 @@
             </div>
         </div>
     </div>
+    <main>
+        <div class="main-container">
+            <nav class="header__navigation">
+                <div class="navigation">
+                    <button class="arrow-left">
+                        <img src="src/assets/icons/small-left.png" alt="Seta esquerda.">
+                    </button>
+                    <button class="arrow-right">
+                        <img src="src/assets/icons/small-right.png" alt="Seta direita.">
+                    </button>
+                </div>
+
+                <div class="header__search">
+                    <span class="fa-solid fa-search"></span>
+                    <input id="search-input" type="text" maxlength="800" placeholder="O que você quer ouvir?">
+                </div>
+
+                <div class="header__login">
+                    <button class="subscribe-button">Inscreva-se</button>
+                    <button class="login-button button--white">Entrar</button>
+                </div>
+            </nav>
+        </div>
+    </main>
+    <footer class="footer-subscribe">
+        <div class="footer-subscribe__content">
+            <h4>Testar o Premium de Graça</h4>
+            <p>Inscreva-se para curtir música ilimitada e podcasts só com alguns anúncios. Não precisa de cartão de crédito.</p>
+        </div>
+        <button class="footer-subscribe__button button--white">
+            <span>Inscreva-se grátis</span>
+        </button>
+    </footer>
 </body>
 </html>

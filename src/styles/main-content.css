@@ -1,0 +1,82 @@
+.main-container {
+    max-width: 80vw;
+    height: 100vh;
+    margin-left: 320px;
+    margin-right: 56px;
+}
+
+.header__navigation {
+    background-color: var(--bgc-black);
+    padding: 16px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header__navigation .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1.25rem;
+}
+
+.arrow-left, .arrow-right {
+    width: 32px;
+    height: 32px;
+    background: var(--bg-icon);
+    background-color: var(--bg-arrow-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.header__search {
+    width: 364px;
+    height: 48px;
+    background-color: var(--bgc-header-search);
+    border-radius: 500px;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+}
+
+.header__search span {
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+}
+
+.header__search input {
+    background: transparent;
+    padding: 0px 100px 0 12px;
+    color: var(--white);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    border: none;
+    white-space: nowrap;
+    outline: none;
+}
+
+.header__login {
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header__login .subscribe-button {
+    color: #a7a7a7;
+    background: transparent;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+.header__login .login-button {
+    font-size: inherit;
+    font-weight: inherit; 
+    border-radius: 40px;
+    padding: 12px 23px; 
+}

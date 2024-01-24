@@ -1,0 +1,28 @@
+body {
+    background-color: var(--black);
+    font-family: var(--font-dm-sans);
+    color: white;
+    padding: 1.2rem;
+}
+
+button {
+    border: 0px;
+    cursor: pointer;
+}
+
+.button--white {
+    width: fit-content;
+    background-color: var(--white);
+    padding: 10px 20px; 
+    border-radius: 20px;
+    color: var(--black);
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+}
+
+/* Temporário */
+span {
+    font-size: 15px;
+}
