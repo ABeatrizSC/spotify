@@ -53,10 +53,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 25px;
+    gap: 12px;
 }
 
 .container-library .container-library__content {
+    margin-bottom: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -82,9 +83,9 @@
     font-size: 20px;
 }
 
-.section-playlist {
+.section-playlist, .section-podcast {
     background-color: #242424;
-    padding: 20px;
+    padding: 15px;
     border-radius: 8px;
     font-size: 14px;
     font-weight: 600;
@@ -93,26 +94,26 @@
     justify-content: space-between;
 }
 
-.section-playlist .section-playlist__content {
+.section-playlist .section-playlist__content, .section-podcast .section-podcast__content {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-.section-playlist__content .text {
+.section-playlist__content .text, .section-podcast__content .text  {
     color: var(--white);
 }
 
-.section-playlist__content .title {
+.section-playlist__content .title, .section-podcast__content .title {
     font-weight: 700;
 }
 
-.section-playlist__content .subtitle {
+.section-playlist__content .subtitle, .section-podcast__content .subtitle {
     font-weight: 500;
     font-size: 12px;
 }
 
-.section-playlist__content .section-playlist__button {
+.section-playlist__content .section-playlist__button, .section-podcast__content .section-podcast__button {
     padding: 10px 15px;
 }
 
