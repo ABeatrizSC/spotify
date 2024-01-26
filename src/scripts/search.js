@@ -15,20 +15,20 @@ function displayResults(result) {
     const artistImage = document.getElementById('artist-img');
 
     result.forEach(element => {
-        artistName.innerText = element.name;
         artistImage.src = element.urlImg;
+        artistName.innerHTML = element.name;
     });
 
     resultsArtists.classList.remove('hidden');
 }
 
-document.addEventListener('input', function(){
+document.addEventListener('input', () => {
     const searchValue = searchInput.value.toLowerCase();
     if (searchValue === '') {
-        resultPlaylist.classList.add('hidden');
-        resultsArtists.classList.remove('hidden');
+        resultPlaylist.classList.remove('hidden');
+        resultsArtists.classList.add('hidden'); /* acerto: troquei remove por add */
         return
-    }
+    } 
 
     requestAPI(searchValue);
 })

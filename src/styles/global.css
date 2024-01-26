@@ -1,28 +1,43 @@
+html {
+    font-size: 62.5%;
+}
+
 body {
     background-color: var(--black);
     font-family: var(--font-dm-sans);
     color: white;
-    padding: 1.2rem;
+    margin: 1.2rem;
+    overflow-y: hidden;
+    max-width: 230rem;
 }
 
 button {
-    border: 0px;
+    border: 0rem;
     cursor: pointer;
+    font-family: var(--font-dm-sans);
 }
 
 .button--white {
     width: fit-content;
     background-color: var(--white);
-    padding: 10px 20px; 
-    border-radius: 20px;
+    padding: 1rem 2rem; 
+    border: 0.1rem solid transparent;
+    border-radius: 2rem;
     color: var(--black);
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 700;
     display: flex;
     justify-content: center;
+    transition: all 300ms ease;
 }
 
-/* Temporário */
+.button--white:hover {
+    background-color: var(--black);
+    color: var(--white);
+    border-color: var(--white);
+}
+
 span {
-    font-size: 15px;
+    font-size: 1.5rem;
+    font-family: var(--font-dm-sans);
 }

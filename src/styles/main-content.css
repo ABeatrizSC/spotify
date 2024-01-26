@@ -1,14 +1,16 @@
 .main-container {
     max-width: 80vw;
     height: 100vh;
-    margin-left: 320px;
-    margin-right: 56px;
+    margin-left: 32rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
 }
 
 .header__navigation {
     background-color: var(--bgc-black);
-    padding: 16px;
-    border-radius: 8px;
+    padding: 1.6rem;
+    border-radius: 0.8rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -22,8 +24,8 @@
 }
 
 .arrow-left, .arrow-right {
-    width: 32px;
-    height: 32px;
+    width: 3.3rem;
+    height: 3.2rem;
     background: var(--bg-icon);
     background-color: var(--bg-arrow-color);
     display: flex;
@@ -33,24 +35,24 @@
 }
 
 .header__search {
-    width: 364px;
-    height: 48px;
+    width: 36.4rem;
+    height: 4.8rem;
     background-color: var(--bgc-header-search);
-    border-radius: 500px;
-    border: 1px solid transparent;
+    border-radius: 50rem;
+    border: 0.1rem solid transparent;
     display: flex;
     align-items: center;
 }
 
 .header__search span {
-    width: 16px;
-    height: 16px;
-    margin-left: 10px;
+    width: 1.6rem;
+    height: 1.6rem;
+    margin-left: 1rem;
 }
 
 .header__search input {
     background: transparent;
-    padding: 0px 100px 0 12px;
+    padding: 0rem 10rem 0 1.2rem;
     color: var(--white);
     text-overflow: ellipsis;
     overflow: hidden;
@@ -59,61 +61,69 @@
     outline: none;
 }
 
+#search-input {
+  font-size: 1.6rem;
+  min-width: 60%;
+}
+
 .header__login {
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 700;
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 1.5rem;
 }
 
 .header__login .subscribe-button {
-    color: #a7a7a7;
+    color: var(--text-sub);
     background: transparent;
     font-size: inherit;
     font-weight: inherit;
 }
 
+.header__login .subscribe-button:hover {
+    color: var(--white);
+}
+
 .header__login .login-button {
     font-size: inherit;
     font-weight: inherit; 
-    border-radius: 40px;
-    padding: 12px 23px; 
+    border-radius: 4rem;
+    padding: 1.2rem 2.3rem; 
 }
 
 .playlist-container {
-    height: 68vh;
-    padding-top: 16px;
-    margin: 10px;
-    border-radius: 10px;
+    height:680vh;
+    padding-top: 1.6rem;
+    border-radius: 1rem;
     background-color: #121212;
   }
   
   .playlist {
-    margin: 24px;
+    margin: 1rem 2.4rem;
   }
   
   .playlist #greeting {
     color: var(--text-base-light);
-    font-size: 32px;
+    font-size: 3.6rem;
     font-weight: 700;
-    margin-bottom: 48px;
+    margin-bottom: 3rem;
   }
   
   .playlist .session {
     color: var(--text-base-light);
-    font-size: 24px;
+    font-size: 2.2rem;
     font-weight: 700;
   }
   
   .offer__scroll-container {
-    max-height: 43vh;
-    margin: 24px;
+    max-height: 49vh;
+    margin: 2.4rem;
     overflow-y: auto;
   }
   
   .offer__scroll-container::-webkit-scrollbar {
-    width: 1px;
+    width: 0.1rem;
   }
   
   .offer__scroll-container::-webkit-scrollbar-thumb {
@@ -121,33 +131,27 @@
   }
   
   .offer__list-item {
-    /* display: grid;
+    display: grid;
     justify-items: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 16px;
-    gap: 16px;
-    margin-bottom: 16px; */
-  
-    /* CODIGO COM JS CALCULANDO OS CARDS POR COLUNA */
-    display: grid;  /* define o modelo de layout do elemento como uma grade */
-    gap: 16px;
-    grid-gap: 32px;  /* não é usado mais */
-    margin: 0 auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1.6rem;
+    gap: 1.6rem;
+    margin-bottom: 1.6rem;
   }
   
   .cards {
     position: relative; 
-    width: 220px;
-    height: 200px;
+    width: 22rem;
+    height: 20rem;
     overflow: hidden;
-    border-radius: 8px;
+    border-radius: 0.8rem;
   }
   
   .cards span {
-    padding: 16px;
+    padding: 1.6rem;
     position: absolute;
     color: var(--text-base-light);
-    font-size: 24px;
+    font-size: 2rem;
     font-weight: 700;
   }
   
@@ -203,7 +207,7 @@
     right: 0;
     bottom: 0;
     height: auto;
-    width: 107px;
+    width: 10.7rem;
     transform: rotate(25deg) translate(18%, -2%);
   }
   
@@ -211,8 +215,8 @@
   
   .artist {
     --column-count: 5;
-    --grid-gap: 24px;
-    --min-container-width: 372px;
+    --grid-gap: 2.4rem;
+    --min-container-width: 37.2rem;
   }
   
   .hidden {
@@ -228,14 +232,14 @@
   
   .artist-card {
     background: #181818;
-    border-radius: 8px;
+    border-radius: 0.8rem;
     -ms-flex: 1;
     flex: 1;
     isolation: isolate;
-    padding: 16px;
+    padding: 1.6rem;
     position: relative;
     transition: background-color 0.3s ease;
-    width: 100%;
+    width: 20%;
   }
   
   .artist-card:hover {
@@ -246,26 +250,27 @@
     padding-bottom: 100%;
     position: relative;
     width: 100%;
-    margin-bottom: 16px;
+    margin-bottom: 1.6rem;
   }
   
   .artist-img {
-    height: 100%;
-    left: 0;
+    height: 90%;
+    left: 50%;
+    transform: translateX(-50%);
     position: absolute;
     top: 0;
-    width: 100%;
+    object-fit: contain;
     border-radius: 50%;
   }
   
   .card-text {
     display: flex;
     flex-direction: column;
-    color: #fff;
+    color: var(--white);
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    min-height: 62px;
+    min-height: 6.2rem;
   }
   
   .card-text a {
@@ -276,16 +281,16 @@
   
   .artist-name {
     box-sizing: border-box;
-    margin-block: 0px;
-    font-size: 16px;
+    margin-block: 0rem;
+    font-size: 1.8rem;
     font-weight: 700;
-    padding-block-end: 8px;
+    padding-block-end: 0.8rem;
   }
   
   .artist-categorie {
     color: #6a6a6a;
     font-weight: 400;
-    font-size: 0.875rem;
+    font-size: 1.6rem;
   }
   
   .play {
@@ -294,26 +299,26 @@
   
   .play .fa-play {
     position: absolute;
-    right: 10px;
-    top: 120px;
-    padding: 18px;
-    background-color: #1db954;
+    right: 1rem;
+    top: 12rem;
+    padding: 1.8rem;
+    background-color: var(--bgc-play);
     border-radius: 100%;
-    font-size: 14px;
+    font-size: 1.4rem;
     opacity: 0;
     transition: all ease 0.4s;
   }
   
   .artist-card:hover .play .fa-play {
     opacity: 1;
-    transform: translateY(-20px);
+    transform: translateY(-2rem);
   }
   
   .play .fa-play:hover {
-    padding: 20px;
+    padding: 2rem;
     cursor: pointer;
   }
   
   #result-artist {
-    padding: 20px 40px;
+    padding: 2rem 4rem;
   }
