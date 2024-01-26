@@ -22,9 +22,8 @@ https://github.com/ABeatrizSC/spotify/assets/105675205/63b92ae1-cba7-4d2e-b4de-3
 <h2 name="sobre">📝Sobre</h2>
 <ul>
   <li>Projeto realizado durante o evento online Imersão Front-End da Alura;</li>
-  <li>Página réplica do Spotify, com função de busca por artistas integrada a uma API REST simulada a partir do JSON Server;</li>
-  <li>Para maior funcionalidade do projeto, é necessário possuir o NPM e executar o json server em seu computador (passo a passo abaixo);</li>
-  <li>Layout adaptado para maior responsividade.</li>
+  <li>Página réplica do Spotify, com função de busca por artistas integrada a uma API REST simulada a partir do JSON Server, uma biblioteca NodeJs (<a href="https://blog.rocketseat.com.br/criando-uma-api-falsa-com-json-server/amp/" target="_blank">Leia mais sobre</a>);</li>
+  <li>Para maior funcionalidade do projeto, é necessário possuir o NodeJS NPM e executar o json server em seu computador (passo a passo abaixo).</li>
 </ul>
 
 <h2 name="deploy">🔗Deploy</h2>
